@@ -11,12 +11,19 @@
 .logo {
     display: block;
     padding: 8px 0;
-
+  
     h1 {
-        display: block;
-        margin: 8px auto;
-        width: 24px;
-        height: auto;
+      display: block;
+      margin: 8px auto;
+      width: 24px;
+      height: auto;
+      color: bisque;
     }
-}
+  
+    a {
+      color: bisque;
+      text-decoration: none; 
+    }
+  }
+  
 

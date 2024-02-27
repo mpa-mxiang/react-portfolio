@@ -12,15 +12,11 @@
     display: block;
     padding: 8px 0;
 
-    img {
+    h1 {
         display: block;
         margin: 8px auto;
         width: 24px;
         height: auto;
-
-        &.sub-logo {
-            width: 50px;
-        }
     }
 }
 

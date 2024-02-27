@@ -4,8 +4,7 @@ const Layout = () => {
     return 
     <div className='nav-bar'>  
       <Link className='logo' to='/'>
-        <img src={LogoS} alt="logo" />
-        <img src={LogoSubtitle} alt="slobodan" />
+        <h1>Jiachun</h1>
       </Link>
     </div>>
 }

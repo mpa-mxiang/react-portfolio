@@ -12,10 +12,9 @@ export const NavBar = () => {
         </Navbar.Toggle>
         <Navbar.Collapse id="navbarSupportedContent">
           <Nav className="me-auto">
-            <Nav.Link href="#" active>
-              Home
-            </Nav.Link>
             <Nav.Link href="#home">Home</Nav.Link>
+            <Nav.Link href="#skills">Skills</Nav.Link>
+            <Nav.Link href="#projects">Projects</Nav.Link>
           </Nav>
         </Navbar.Collapse>
       </Container>

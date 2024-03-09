@@ -16,6 +16,19 @@ export const NavBar = () => {
             <Nav.Link href="#skills">Skills</Nav.Link>
             <Nav.Link href="#projects">Projects</Nav.Link>
           </Nav>
+          <span className="navbar-text">
+            <div className="social-icons">
+                <a href="#">
+                    <img src={''} alt="" />
+                </a>
+                <a href="#">
+                    <img src={''} alt="" />
+                </a>
+                <a href="#">
+                    <img src={''} alt="" />
+                </a>
+            </div>
+          </span>
         </Navbar.Collapse>
       </Container>
     </Navbar>

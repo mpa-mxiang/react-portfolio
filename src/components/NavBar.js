@@ -8,20 +8,14 @@ export const NavBar = () => {
             <img src={''} alt="Logo" />
         </Navbar.Brand>
         <Navbar.Toggle aria-controls="basic-navbar-nav">
-        
+            <span className="navbar-toggler-icon"></span>
         </Navbar.Toggle>
         <Navbar.Collapse id="navbarSupportedContent">
           <Nav className="me-auto">
             <Nav.Link href="#" active>
               Home
             </Nav.Link>
-            <Nav.Link href="#">Link</Nav.Link>
-            <NavDropdown title="Dropdown" id="basic-nav-dropdown">
-              <NavDropdown.Item href="#">Action</NavDropdown.Item>
-              <NavDropdown.Item href="#">Another action</NavDropdown.Item>
-              <NavDropdown.Divider />
-              <NavDropdown.Item href="#">Something else here</NavDropdown.Item>
-            </NavDropdown>
+            <Nav.Link href="#home">Home</Nav.Link>
           </Nav>
         </Navbar.Collapse>
       </Container>

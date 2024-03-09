@@ -4,8 +4,12 @@ export const NavBar = () => {
   return (
     <Navbar expand="lg">
       <Container>
-        <Navbar.Brand href="#">Navbar</Navbar.Brand>
-        <Navbar.Toggle aria-controls="navbarSupportedContent" />
+        <Navbar.Brand href="#home">
+            <img src={''} alt="Logo" />
+        </Navbar.Brand>
+        <Navbar.Toggle aria-controls="basic-navbar-nav">
+        
+        </Navbar.Toggle>
         <Navbar.Collapse id="navbarSupportedContent">
           <Nav className="me-auto">
             <Nav.Link href="#" active>

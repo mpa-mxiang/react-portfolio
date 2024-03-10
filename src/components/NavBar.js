@@ -13,6 +13,9 @@ export const Navbar = () => {
                 setScrolled(false);
             }
         }
+
+        window.addEventListener("scroll", onScroll);
+        return () => window.removeEventListener("scroll", onScroll);
     }}
   return (
     <Navbar expand="lg">

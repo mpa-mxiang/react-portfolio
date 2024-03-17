@@ -44,13 +44,13 @@ export const NavBar = () => {
           <span className="navbar-text">
             <div className="social-icons">
                 <a href="#">
-                    <img src={navIcon1} alt="" />
+                    <img src={navIcon1} alt="" className="mx-2" />
                 </a>
                 <a href="#">
-                    <img src={navIcon2} alt="" />
+                    <img src={navIcon2} alt="" className="mx-2"/>
                 </a>
                 <a href="#">
-                    <img src={navIcon3} alt="" />
+                    <img src={navIcon3} alt="" className="mx-2" />
                 </a>
             </div>
             <button className="vvd" onClick={()=> console.log('connect')}>

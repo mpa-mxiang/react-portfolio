@@ -1,7 +1,7 @@
-import { Container } from "react-bootstrap";
+import { Container, Row, Col } from "react-bootstrap";
 import Carousel from "react-multi-carousel";
 import "react-multi-carousel/lib/styles.css";
-
+import meter from "../assets/img/meter.svg";
 export const Skills = () => {
     const responsive = {
         superLargeDesktop: {
@@ -38,23 +38,23 @@ export const Skills = () => {
                             </p>
                             <Carousel responsive={responsive} infinite={true} className="skill-sider">
                                 <div className="item">
-                                    <img src={} alt="Image" /> 
+                                    <img src={meter} alt="Image" /> 
                                     <h5>Project</h5>
                                 </div>
                                 <div className="item">
-                                    <img src={} alt="Image" /> 
+                                    <img src={meter} alt="Image" /> 
                                     <h5>Project</h5>
                                 </div>
                                 <div className="item">
-                                    <img src={} alt="Image" /> 
+                                    <img src={meter} alt="Image" /> 
                                     <h5>Project</h5>
                                 </div>
                                 <div className="item">
-                                    <img src={} alt="Image" /> 
+                                    <img src={meter} alt="Image" /> 
                                     <h5>Project</h5>
                                 </div>
                                 <div className="item">
-                                    <img src={} alt="Image" /> 
+                                    <img src={meter} alt="Image" /> 
                                     <h5>Project</h5>
                                 </div>
                             </Carousel>

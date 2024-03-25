@@ -12,6 +12,14 @@ export const Contact = () => {
     const [status, setStatus] = useState({});
 
     return (
-        
+        <section className="contact" id="connect">
+            <Container>
+                <Row className="align-items-center">
+                    <Col md={6}>
+                        <img src={} alt='' />
+                    </Col>
+                </Row>
+            </Container>
+        </section>
     )
 }

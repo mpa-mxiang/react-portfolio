@@ -19,6 +19,18 @@ export const Contact = () => {
                     <Col md={6}>
                         <img src={contactImg} alt='Contact Us' />
                     </Col>
+                    <Col md={6}>
+                        <h2>Get in Touch</h2>
+                        <form>
+                            <Row>
+                                <Col sm={6} className="px-1">
+                                    <input type="text" value={formDetails.name} placeholder="Name" onChange={(e) => onFormUpdate('name', e.target.valiue)} />
+                                </Col>
+                                <Col>
+                                </Col>
+                            </Row>
+                        </form>
+                    </Col>
                 </Row>
             </Container>
         </section>

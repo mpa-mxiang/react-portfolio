@@ -30,10 +30,10 @@ export const Contact = () => {
                         <form>
                             <Row>
                                 <Col sm={6} className="px-1">
-                                    <input type="text" value={formDetails.name} placeholder="Name" onChange={(e) => onFormUpdate('name', e.target.valiue)} />
+                                    <input type="text" value={formDetails.name} placeholder="Name" onChange={(e) => onFormUpdate('name', e.target.value)} />
                                 </Col>
                                 <Col sm={6} className="px-1">
-                                    <input type="text" value={formDetails.name} placeholder="Email" onChange={(e) => onFormUpdate('email', e.target.valiue)} />
+                                    <input type="text" value={formDetails.email} placeholder="Email" onChange={(e) => onFormUpdate('email', e.target.value)} />
                                 </Col>
                             </Row>
                         </form>

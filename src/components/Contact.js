@@ -1,5 +1,5 @@
 import { useState } from "react";
-import { Container } from "react-bootstrap";
+import { Container, Row, Col } from "react-bootstrap";
 import contactImg from "../assets/img/contact-img.svg";
 export const Contact = () => {
     const formInitialDetails = {
@@ -12,6 +12,12 @@ export const Contact = () => {
     const [buttonText, setButtonText] = useState('Send');
     const [status, setStatus] = useState({});
 
+    const onFormUpdate = (category, value) => {
+        setFormDetails({
+          ...formDetails,
+          [category]: value
+        })
+    }
     return (
         <section className="contact" id="connect">
             <Container>

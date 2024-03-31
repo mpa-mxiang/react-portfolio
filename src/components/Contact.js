@@ -18,6 +18,10 @@ export const Contact = () => {
           [category]: value
         })
     }
+
+    const handleSubmit = () => {
+        
+    }
     return (
         <section className="contact" id="connect">
             <Container>
@@ -27,7 +31,7 @@ export const Contact = () => {
                     </Col>
                     <Col md={6}>
                         <h2>Get in Touch</h2>
-                        <form>
+                        <form onSubmit={handleSubmit}>
                             <Row>
                                 <Col sm={6} className="px-1">
                                     <input type="text" value={formDetails.name} placeholder="Name" onChange={(e) => onFormUpdate('name', e.target.value)} />

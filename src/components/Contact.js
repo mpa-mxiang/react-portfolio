@@ -33,6 +33,7 @@ export const Contact = () => {
                                     <input type="text" value={formDetails.name} placeholder="Name" onChange={(e) => onFormUpdate('name', e.target.valiue)} />
                                 </Col>
                                 <Col>
+                                    <input type="text" value={formDetails.name} placeholder="Email" onChange={(e) => onFormUpdate('email', e.target.valiue)} />
                                 </Col>
                             </Row>
                         </form>

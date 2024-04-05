@@ -5,8 +5,14 @@ export const MailchimpForm = () => {
 
     return (
         <>
-            <MailchimpSubscribe>
-            </MailchimpSubscribe>
+            <MailchimpSubscribe 
+                url={postUrl}
+                render={({ subscribe, status, message }) => {
+                    <>
+                        
+                    </>
+                }}
+            />
         </>
     )
 }

@@ -67,7 +67,14 @@
         position: absolute;
         top: 80px;
         left: -110%;
-        
+        opacity: 1;
+        transition: all 0.5s ease;
+    }
+    .nav-icon {
+        display: block;
+        cursor: pointer;
+        color: var(--yellow-theme-main-color);
+        padding: 20px;
     }
     
 }

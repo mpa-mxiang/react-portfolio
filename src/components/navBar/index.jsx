@@ -1,7 +1,8 @@
-import React, { useState } from 'react';
+import React, { useState } from "react";
 import { FaReact, FaBars } from "react-icons/fa";
 import { Link } from "react-router-dom";
 import { HiX } from "react-icons/hi";
+import './styles.scss';
 
 const data = [
   {
@@ -41,7 +42,7 @@ const Navbar = () => {
     <div>
       <nav className="navbar">
         <div className="navbar__container">
-          <Link to={"/"} className="navbar__container-logo">
+          <Link to={"/"} className="navbar__container__logo">
             <FaReact size={30} />
           </Link>
         </div>

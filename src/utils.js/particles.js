@@ -38,6 +38,9 @@ export default  {
           opacity: 0.5,
           width: 1,
         },
+        collisions: {
+            enable: true,
+        },
         move: {
           direction: "none",
           enable: true,
@@ -51,6 +54,7 @@ export default  {
         number: {
           density: {
             enable: true,
+            area: 800,
           },
           value: 80,
         },

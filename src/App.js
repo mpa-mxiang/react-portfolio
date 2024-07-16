@@ -1,4 +1,4 @@
-import './App.css';
+import './App.scss';
 import { Routes, Route } from 'react-router-dom';
 import Particles from "react-tsparticles";
 import { loadFull } from 'tsparticles';
@@ -22,6 +22,11 @@ function App() {
 
 
       <Navbar />
+      <div className='App__main-content'>
+
+      </div>
+
+
       <Routes>
         <Route index path='/' element={<Home />} />
         <Route index path='/about' element={<About />} />

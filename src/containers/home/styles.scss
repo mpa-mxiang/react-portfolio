@@ -1,15 +1,15 @@
-.homt {
+.home {
     position: relative;
     height: 100%;
     display: flex;
     justify-content: center;
     align-content: center;
+    flex-direction: column;
 
     &__text-wrapper {
         display: flex;
         justify-content: center;
-        align-content: center;
-        flex-direction: column;
+
         h1 {
             color: var(--yellow-theme-main-color);
             margin: 0;
@@ -49,4 +49,7 @@
     from {
         width: 0;
     }
+    to {
+        width: 100%;
+      }
 }

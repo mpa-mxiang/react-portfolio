@@ -10,6 +10,9 @@ const Home = () => {
           Developer
         </h1>
       </div>
+      <div className='home__contact-me'>
+        <button>Hire me</button>
+      </div>
     </section>
   )
 }

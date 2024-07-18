@@ -41,7 +41,8 @@
             border-radius: 4px;
 
             &:hover {
-
+                background: var(--yellow-theme-main-color);
+                color: #000;
             }
         }
     }

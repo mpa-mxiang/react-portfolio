@@ -1,7 +1,7 @@
 import React from "react";
 import { useNavigate } from "react-router-dom";
 import "./styles.scss";
-import { Animate } from react-;
+import { Animate } from "react-simple-animate";
 const Home = () => {
 
   const navigate = useNavigate();
@@ -22,6 +22,7 @@ const Home = () => {
       play duration={1.5}
       delay={1}
       start={{transform : 'translateY(550px)'}}
+      end={{transform : 'translateY(0px)'}}
       >
         <div className="home__contact-me">
           <button onClick={handleNav}>Hire me</button>

@@ -1,12 +1,13 @@
 import React from "react";
 import { useNavigate } from "react-router-dom";
 import "./styles.scss";
+import { Animate } from react-;
 const Home = () => {
 
   const navigate = useNavigate();
 
   const handleNav = () => {
-    
+    navigate("/contact");
   }
   return (
     <section id="Home" className="home">
@@ -17,9 +18,16 @@ const Home = () => {
           Developer
         </h1>
       </div>
-      <div className="home__contact-me">
-        <button onClick={handleNav}>Hire me</button>
-      </div>
+      <Animate
+      play duration={1.5}
+      delay={1}
+      start={{transform : 'translateY(550px)'}}
+      >
+        <div className="home__contact-me">
+          <button onClick={handleNav}>Hire me</button>
+        </div>
+      </Animate>
+      
     </section>
   );
 };

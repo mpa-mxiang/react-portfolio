@@ -2,7 +2,11 @@ import React from 'react'
 
 const About = () => {
   return (
-    <div>About Page</div>
+    <section id="about" className='about'>
+      <PageHeader
+      headerText = "About Me"
+      icon={BsInfoCircleFill size={40}}>
+    </section>
   )
 }
 

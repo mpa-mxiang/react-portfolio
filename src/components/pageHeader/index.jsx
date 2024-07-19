@@ -15,4 +15,4 @@ const {headerText, icon } = props;
   )
 }
 
-export default index
+export default PageHeader

@@ -23,7 +23,7 @@ function App() {
 
       <Navbar />
 
-      <div className="App__main-page-content">
+      <div className="App__main-content">
       <Routes>
         <Route index path="/" element={<Home />} />
         <Route path="/about" element={<About />} />

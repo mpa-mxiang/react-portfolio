@@ -4,9 +4,9 @@ import { BsInfoCircleFill } from "react-icons/bs";
 
 const Contact = () => {
   return (
-    <section id="resume" className='resume'>
+    <section id="contact" className='contact'>
     <PageHeader
-      headerText="My Resume"
+      headerText="Contact Me"
       icon={<BsInfoCircleFill size={40} />} 
     />
   </section>

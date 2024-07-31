@@ -10,15 +10,14 @@
         }
 
         &__personalWrapper {
+            h3, p, li {
+                padding: 1rem;
+            }
             h3 {
                 margin-bottom: 10px;
                 font-size: 2.5rem;
                 font-weight: 700;
                 color: var(--yellow-theme-main-color);
-            }
-
-            h3.personalInfoText {
-                padding: 20px;
             }
         }
     }

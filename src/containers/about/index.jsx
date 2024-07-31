@@ -20,6 +20,13 @@ const About = () => {
             <p>{jobSummary}</p>
           </div>
         </Animate>
+
+        <h3>Personal Info</h3>
+        <ul>
+          {
+            personal
+          }
+        </ul>
       </div>
     </section>
   );

@@ -3,7 +3,7 @@ import PageHeader from "../../components/pageHeader";
 import { BsInfoCircleFill } from "react-icons/bs";
 import { Animate } from "react-simple-animate";
 import "./styles.scss";
-import { DiAndroid, DiApple } from "react-icons/di";
+import { DiGit, DiGithub } from "react-icons/di";
 import { FaDev, FaDatabase } from "react-icons/fa";
 const personDetails = [
   {
@@ -70,10 +70,10 @@ const About = () => {
           <div className="about__content__infoWrapper__content">
             <FaDev size={60} color="var(--yellow-theme-main-color" />
             <div>
-            <DiAndroid size={60} color="var(--yellow-theme-main-color" />
+            <DiGit size={60} color="var(--yellow-theme-main-color" />
             </div>
             <div>
-            <DiApple size={60} color="var(--yellow-theme-main-color" />
+            <DiGithub size={60} color="var(--yellow-theme-main-color" />
             </div>
             <div>
             <FaDatabase size={60} color="var(--yellow-theme-main-color" />

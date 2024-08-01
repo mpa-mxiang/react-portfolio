@@ -36,6 +36,9 @@
                 span.title, span.value {
                     font-size: 18px;
                     font-weight: 700;
+                    letter-spacing: 0.5px;
+                    border-top: 2px solid var(--yellow-theme-main-color);
+                    
                 }
             }
         }

@@ -37,8 +37,16 @@
                     font-size: 18px;
                     font-weight: 700;
                     letter-spacing: 0.5px;
-                    border-top: 2px solid var(--yellow-theme-main-color);
-                    
+                    border-bottom: 2px solid var(--yellow-theme-main-color);
+                    position: relative;
+                    display: inline-block;
+                    margin-right: 16px;
+                    padding-bottom: 5px;
+                    color: var(--yellow-theme-sub-text-color);
+                }
+
+                span.value {
+                    border: none;
                 }
             }
         }

@@ -3,6 +3,8 @@ import PageHeader from "../../components/pageHeader";
 import { BsInfoCircleFill } from "react-icons/bs";
 import { Animate } from "react-simple-animate";
 import "./styles.scss";
+import { DiApple } from 'react-icons/di';
+import { FaDev, FaDatabase } from 'react-icons/fa';
 const personDetails = [
   {
     label: "name",
@@ -46,7 +48,7 @@ const About = () => {
             </div>
           </Animate>
         
-        <div className="about__content__infoWrapper">
+        
           <Animate
             play
             duration={1.5}
@@ -65,8 +67,10 @@ const About = () => {
             </ul>
           </Animate>
         </div>
+        <div className="about__content__infoWrapper">
       </div>
       </div>
+
     </section>
   );
 };

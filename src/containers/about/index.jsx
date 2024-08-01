@@ -3,15 +3,15 @@ import PageHeader from "../../components/pageHeader";
 import { BsInfoCircleFill } from "react-icons/bs";
 import { Animate } from "react-simple-animate";
 import "./styles.scss";
-import { DiApple } from 'react-icons/di';
-import { FaDev, FaDatabase } from 'react-icons/fa';
+import { DiAndroid, DiApple } from "react-icons/di";
+import { FaDev, FaDatabase } from "react-icons/fa";
 const personDetails = [
   {
-    label: "name",
+    label: "Name",
     value: "Jiachun Xiang",
   },
   {
-    label: "Address",
+    label: "Location",
     value: "Canada",
   },
   {
@@ -47,8 +47,7 @@ const About = () => {
               <p>{jobSummary}</p>
             </div>
           </Animate>
-        
-        
+
           <Animate
             play
             duration={1.5}
@@ -68,9 +67,20 @@ const About = () => {
           </Animate>
         </div>
         <div className="about__content__infoWrapper">
+          <div className="about__content__infoWrapper__content">
+            <FaDev size={60} color="var(--yellow-theme-main-color" />
+            <div>
+            <DiAndroid size={60} color="var(--yellow-theme-main-color" />
+            </div>
+            <div>
+            <DiApple size={60} color="var(--yellow-theme-main-color" />
+            </div>
+            <div>
+            <FaDatabase size={60} color="var(--yellow-theme-main-color" />
+            </div>
+        </div>
+        </div>
       </div>
-      </div>
-
     </section>
   );
 };

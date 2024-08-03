@@ -50,6 +50,17 @@
                 }
             }
         }
+
+        &__infoWrapper {
+
+            &__content {
+                width: 350px;
+                height: 350px;
+                background: radial-gradient(180px, var(--yellow-theme-main-color, transparent 90%));
+                position: relative;
+                boarder-radius: 50%;
+            }
+        }
     }
 
 }

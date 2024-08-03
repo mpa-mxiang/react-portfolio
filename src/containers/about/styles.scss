@@ -59,6 +59,23 @@
                 background: radial-gradient(180px, var(--yellow-theme-main-color, transparent 90%));
                 position: relative;
                 border-radius: 50%;
+                border: 1.5px solid var(--yellow-theme-main-color);
+
+                div:nth-child(1) {
+                    position: absolute;
+                }
+
+                div:nth-child(2) {
+                    position: absolute;
+                }
+
+                div:nth-child(3) {
+                    position: absolute;
+                }
+
+                div:nth-child(4) {
+                    position: absolute;
+                }
             }
         }
     }

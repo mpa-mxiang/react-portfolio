@@ -55,9 +55,10 @@
             display: flex;
             justify-content: center;
             align-items: center;
+            padding: 3rem;
             &__content {
-                width: 350px;
-                height: 350px;
+                width: 360px;
+                height: 360px;
                 background: radial-gradient(
                     180px,
                     var(--yellow-theme-main-color),

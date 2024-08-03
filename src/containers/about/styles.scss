@@ -62,7 +62,7 @@
                 position: relative;
                 border-radius: 50%;
                 border: 1.5px solid var(--yellow-theme-main-color);
-                animation: rotation 10s linear 1s infinite;
+                // animation: rotation 10s linear 1s infinite;
 
                 div:nth-child(1) {
                     position: absolute;
@@ -72,8 +72,8 @@
 
                 div:nth-child(2) {
                     position: absolute;
-                    bottom: -10%;
-                    left: 41%;
+                    top: 41.5%;
+                    right: -8%;
                 }
 
                 div:nth-child(3) {
@@ -85,6 +85,7 @@
                 div:nth-child(4) {
                     position: absolute;
                     left: -8%;
+                    top: 41%;
                 }
             }
         }

@@ -68,17 +68,19 @@ const About = () => {
         </div>
         <div className="about__content__infoWrapper">
           <div className="about__content__infoWrapper__content">
-            <FaDev size={60} color="var(--yellow-theme-main-color" />
             <div>
-            <DiGit size={60} color="var(--yellow-theme-main-color" />
+              <FaDev size={60} color="var(--yellow-theme-main-color" />
             </div>
             <div>
-            <DiGithub size={60} color="var(--yellow-theme-main-color" />
+              <DiGit size={80} color="var(--yellow-theme-main-color" />
             </div>
             <div>
-            <FaDatabase size={60} color="var(--yellow-theme-main-color" />
+              <DiGithub size={80} color="var(--yellow-theme-main-color" />
             </div>
-        </div>
+            <div>
+              <FaDatabase size={60} color="var(--yellow-theme-main-color" />
+            </div>
+          </div>
         </div>
       </div>
     </section>

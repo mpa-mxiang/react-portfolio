@@ -107,5 +107,17 @@
     .about__content {
         flex-direction: column;
 
+        &__personalWrapper, &___infoWrapper {
+            width: 100%;
+        }
+
+        &___infoWrapper {
+            margin: 10px 0px;
+            &__content {
+                width: 250px;
+                height: 250px;
+                background: radial-gradient(100px, var(--yellow-theme-main-color), transparent 120%);
+            }
+        }
     }
 }

@@ -111,12 +111,36 @@
             width: 100%;
         }
 
-        &___infoWrapper {
+        &__infoWrapper {
             margin: 10px 0px;
             &__content {
-                width: 250px;
-                height: 250px;
-                background: radial-gradient(100px, var(--yellow-theme-main-color), transparent 120%);
+                width: 300px;
+                height: 300px;
+                background: radial-gradient(120px, var(--yellow-theme-main-color), transparent 120%);
+
+                div:nth-child(1) {
+                    position: absolute;
+                    top: -10%;
+                    left: 38%
+                }
+
+                div:nth-child(2) {
+                    position: absolute;
+                    top: 40%;
+                    right: -13%;
+                }
+
+                div:nth-child(3) {
+                    position: absolute;
+                    bottom: -14%;
+                    left: 40%;
+                }
+
+                div:nth-child(4) {
+                    position: absolute;
+                    left: -10%;
+                    top: 40%;
+                }
             }
         }
     }

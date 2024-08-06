@@ -5,7 +5,7 @@
         padding: 20px;
         width: 100%;
         justify-content: space-between;
-        &__personalWrapper, &__serviceWrapper {
+        &__personalWrapper, &___infoWrapper {
             width: 50%;
         }
 
@@ -100,5 +100,12 @@
 @keyframes rotation {
     100% {
         transform: rotate(360deg);
+    }
+}
+
+@media only screen and (max-width: 768px) {
+    .about__content {
+        flex-direction: column;
+
     }
 }

@@ -66,6 +66,13 @@ const About = () => {
             </ul>
           </Animate>
         </div>
+        <Animate
+            play
+            duration={1.5}
+            delay={1}
+            start={{ transform: "translateY(500px)" }}
+            end={{ transform: "translateY(0px)" }}
+          >
         <div className="about__content__infoWrapper">
           <div className="about__content__infoWrapper__content">
             <div>
@@ -81,6 +88,7 @@ const About = () => {
               <FaDatabase size={60} color="var(--yellow-theme-main-color" />
             </div>
           </div>
+          </Animate>
         </div>
       </div>
     </section>

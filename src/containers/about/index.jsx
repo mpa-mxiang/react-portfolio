@@ -32,7 +32,7 @@ const About = () => {
             play
             duration={1.5}
             delay={1}
-            start={{ transform: "translateX(550px)" }}
+            start={{ transform: "translateX(-900px)" }}
             end={{ transform: "translateX(0px)" }}
           >
             <div>
@@ -44,8 +44,8 @@ const About = () => {
             play
             duration={1.5}
             delay={1}
-            start={{ transform: "translateY(500px)" }}
-            end={{ transform: "translateY(0px)" }}
+            start={{ transform: "translateX(-900px)" }}
+            end={{ transform: "translateX(0px)" }}
           >
             <h3 className="personalInfoText">Personal Info</h3>
             <ul>
@@ -62,8 +62,8 @@ const About = () => {
           play
           duration={1.5}
           delay={1}
-          start={{ transform: "translateY(500px)" }}
-          end={{ transform: "translateY(0px)" }}
+          start={{ transform: "translateX(600px)" }}
+          end={{ transform: "translateX(0px)" }}
         >
           <div className="about__content__infoWrapper">
             <div className="about__content__infoWrapper__content">

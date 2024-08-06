@@ -5,28 +5,21 @@ import { Animate } from "react-simple-animate";
 import "./styles.scss";
 import { DiGit, DiGithub } from "react-icons/di";
 import { FaDev, FaDatabase } from "react-icons/fa";
+
 const personDetails = [
-  {
-    label: "Name",
-    value: "Jiachun Xiang",
-  },
-  {
-    label: "Location",
-    value: "Canada",
-  },
-  {
-    label: "Email",
-    value: "jcxiang1230@gmail.com",
-  },
+  { label: "Name", value: "Jiachun Xiang" },
+  { label: "Location", value: "Canada" },
+  { label: "Email", value: "jcxiang1230@gmail.com" },
 ];
 
 const jobSummary = `
 I am a passionate and dedicated developer with a Bachelor's degree in Computer Science. 
 My expertise spans both front-end and back-end development. I am proficient 
-in HTML, CSS, and ReactJS on the front-end, creating intuitive and responsive user interfaces. I excel in languages like Python 
-and other technologies on the back end, ensuring robust and efficient server-side logic. I am committed 
-to continuous learning and regularly update my skills to stay at the forefront of technological advancements. 
-I aim to leverage my diverse skill set to build innovative and impactful software solutions.
+in HTML, CSS, and ReactJS on the front-end, creating intuitive and responsive user interfaces. 
+I excel in languages like Python and other technologies on the back end, ensuring robust and 
+efficient server-side logic. I am committed to continuous learning and regularly update my skills 
+to stay at the forefront of technological advancements. I aim to leverage my diverse skill set to 
+build innovative and impactful software solutions.
 `;
 
 const About = () => {
@@ -47,7 +40,6 @@ const About = () => {
               <p>{jobSummary}</p>
             </div>
           </Animate>
-
           <Animate
             play
             duration={1.5}
@@ -67,29 +59,29 @@ const About = () => {
           </Animate>
         </div>
         <Animate
-            play
-            duration={1.5}
-            delay={1}
-            start={{ transform: "translateY(500px)" }}
-            end={{ transform: "translateY(0px)" }}
-          >
-        <div className="about__content__infoWrapper">
-          <div className="about__content__infoWrapper__content">
-            <div>
-              <FaDev size={60} color="var(--yellow-theme-main-color" />
-            </div>
-            <div>
-              <DiGit size={80} color="var(--yellow-theme-main-color" />
-            </div>
-            <div>
-              <DiGithub size={80} color="var(--yellow-theme-main-color" />
-            </div>
-            <div>
-              <FaDatabase size={60} color="var(--yellow-theme-main-color" />
+          play
+          duration={1.5}
+          delay={1}
+          start={{ transform: "translateY(500px)" }}
+          end={{ transform: "translateY(0px)" }}
+        >
+          <div className="about__content__infoWrapper">
+            <div className="about__content__infoWrapper__content">
+              <div>
+                <FaDev size={60} color="var(--yellow-theme-main-color)" />
+              </div>
+              <div>
+                <DiGit size={80} color="var(--yellow-theme-main-color)" />
+              </div>
+              <div>
+                <DiGithub size={80} color="var(--yellow-theme-main-color)" />
+              </div>
+              <div>
+                <FaDatabase size={60} color="var(--yellow-theme-main-color)" />
+              </div>
             </div>
           </div>
-          </Animate>
-        </div>
+        </Animate>
       </div>
     </section>
   );

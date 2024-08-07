@@ -14,8 +14,8 @@ const data = [
     to: "/about",
   },
   {
-    label: "SKILLS",
-    to: "/skills",
+    label: "PROJECTS",
+    to: "/projects",
   },
 ];
 

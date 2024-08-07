@@ -30,8 +30,12 @@ const Home = () => {
           <button onClick={handleNav}>Hire me</button>
         </div>
         <div className="home__icons">
+        <a href="https://www.linkedin.com/in/jiachunlilyxiang/" target="_blank" rel="noopener noreferrer">
         <FaLinkedinIn size={30} color="var(--yellow-theme-main-color)" />
+      </a>
+      <a href="https://github.com/mpa-mxiang" target="_blank" rel="noopener noreferrer">
         <FaGithub size={30} color="var(--yellow-theme-main-color)" />
+      </a>
         </div>
       </Animate>
       

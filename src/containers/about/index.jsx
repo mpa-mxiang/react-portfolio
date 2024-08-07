@@ -16,7 +16,7 @@ const jobSummary = `
 I am a passionate and dedicated developer with a Bachelor's degree in Computer Science. 
 My expertise spans both front-end and back-end development. I am proficient 
 in HTML, CSS, and ReactJS on the front-end, creating intuitive and responsive user interfaces. 
-I excel in languages like Python and other technologies on the back end, ensuring robust and 
+I excel in languages like Python and other technologies on the back-end, ensuring robust and 
 efficient server-side logic. I am committed to continuous learning and regularly update my skills 
 to stay at the forefront of technological advancements. I aim to leverage my diverse skill set to 
 build innovative and impactful software solutions.

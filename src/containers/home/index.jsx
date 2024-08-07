@@ -2,6 +2,8 @@ import React from "react";
 import { useNavigate } from "react-router-dom";
 import "./styles.scss";
 import { Animate } from "react-simple-animate";
+import { FaLinkedinIn } from "react-icons/fa6";
+import { FaGithub } from "react-icons/fa";
 const Home = () => {
 
   const navigate = useNavigate();
@@ -26,6 +28,10 @@ const Home = () => {
       >
         <div className="home__contact-me">
           <button onClick={handleNav}>Hire me</button>
+        </div>
+        <div className="home__icons">
+        <FaLinkedinIn size={30} color="var(--yellow-theme-main-color)" />
+        <FaGithub size={30} color="var(--yellow-theme-main-color)" />
         </div>
       </Animate>
       

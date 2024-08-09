@@ -65,6 +65,15 @@ const Projects = () => {
   return (
     <section id="projects" className="projects">
       <PageHeader headerText="Projects" icon={<BsInfoCircleFill size={40} />} />
+      <div className="projects__content">
+        <ul className="projects__content__filter">
+          {filterData.map((item=>(
+            <li key={item.filterId}>
+              {item.label}
+            </li>
+          )))}
+        </ul>
+      </div>
     </section>
   );
 };

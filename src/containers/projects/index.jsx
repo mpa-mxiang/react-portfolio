@@ -2,7 +2,7 @@ import React from "react";
 import PageHeader from "../../components/pageHeader";
 import { BsInfoCircleFill } from "react-icons/bs";
 import Img from "../../images/spcial-work.png";
-
+import "./styles.scss";
 const projectData = [
   {
     id: 2,
@@ -59,7 +59,7 @@ const filterData = [
     filterId: 4,
     label: "Full Stack",
   },
-]
+];
 
 const Projects = () => {
   return (
@@ -67,12 +67,21 @@ const Projects = () => {
       <PageHeader headerText="Projects" icon={<BsInfoCircleFill size={40} />} />
       <div className="projects__content">
         <ul className="projects__content__filter">
-          {filterData.map((item=>(
-            <li key={item.filterId}>
-              {item.label}
-            </li>
-          )))}
+          {filterData.map((item) => (
+            <li key={item.filterId}>{item.label}</li>
+          ))}
         </ul>
+        <div className="projects__content__cards">
+          {projectData.map((item) => (
+            <div className="projects__content__cards__item" key={item.id}>
+              <div className="projects__content__cards__item__img-wrapper">
+                <a>
+                  <img alt="dummy project" />
+                </a>
+              </div>
+            </div>
+          ))}
+        </div>
       </div>
     </section>
   );

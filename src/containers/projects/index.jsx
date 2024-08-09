@@ -1,7 +1,7 @@
 import React from "react";
 import PageHeader from "../../components/pageHeader";
 import { BsInfoCircleFill } from "react-icons/bs";
-import Img from "../../images/special-work.png";
+import Img from "../../images/spcial-work.png";
 
 const projectData = [
   {

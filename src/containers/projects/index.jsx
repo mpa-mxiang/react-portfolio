@@ -77,7 +77,7 @@ const Projects = () => {
       <div className="projects__content">
         <ul className="projects__content__filter">
           {filterData.map((item) => (
-            <li onClick={() => handleFilter(item.filterId)} key={item.filterId}>
+            <li className={item.filterId === filteredVal ? 'active': ''} onClick={() => handleFilter(item.filterId)} key={item.filterId}>
               {item.label}
             </li>
           ))}

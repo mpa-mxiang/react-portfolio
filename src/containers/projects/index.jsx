@@ -15,7 +15,7 @@ const projectData = [
     image: Img,
   },
   {
-    id: 2,
+    id: 4,
     name: "project3",
     image: Img,
   },
@@ -86,7 +86,7 @@ const Projects = () => {
           {filteredItems.map((item) => (
             <div
               className="projects__content__cards__item"
-              key={"cardItem${item.name.trim()"}
+              key={`cardItem-${item.name.trim()}`}
             >
               <div className="projects__content__cards__item__img-wrapper">
                 <a>

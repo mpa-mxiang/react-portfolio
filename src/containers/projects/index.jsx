@@ -76,7 +76,7 @@ const Projects = () => {
             <div className="projects__content__cards__item" key={item.id}>
               <div className="projects__content__cards__item__img-wrapper">
                 <a>
-                  <img alt="dummy project" />
+                  <img alt="dummy project" src={ item.image } />
                 </a>
               </div>
             </div>

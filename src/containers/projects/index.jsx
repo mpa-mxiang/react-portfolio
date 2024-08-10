@@ -65,23 +65,32 @@ const Projects = () => {
   const [filteredVal, setFilteredVal] = useState(1);
 
   function handleFilter(currentId) {
-    setFilteredVal();
+    setFilteredVal(currentId);
   }
+
+  const filteredItems = filteredVal === 1 ? 
+  projectData : projectData.filter(item=>item.id === filteredVal);
+
   return (
     <section id="projects" className="projects">
       <PageHeader headerText="Projects" icon={<BsInfoCircleFill size={40} />} />
       <div className="projects__content">
         <ul className="projects__content__filter">
           {filterData.map((item) => (
-            <li onClick={()=>handleFilter(item.filterId)} key={item.filterId}>{item.label}</li>
+            <li onClick={() => handleFilter(item.filterId)} key={item.filterId}>
+              {item.label}
+            </li>
           ))}
         </ul>
         <div className="projects__content__cards">
-          {projectData.map((item) => (
-            <div className="projects__content__cards__item" key={'cardItem${item.name.trim()'}>
+          {filteredItems.map((item) => (
+            <div
+              className="projects__content__cards__item"
+              key={"cardItem${item.name.trim()"}
+            >
               <div className="projects__content__cards__item__img-wrapper">
                 <a>
-                  <img alt="dummy project" src={ item.image } />
+                  <img alt="dummy project" src={item.image} />
                 </a>
               </div>
             </div>

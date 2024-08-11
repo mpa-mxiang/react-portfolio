@@ -8,37 +8,44 @@ const projectData = [
     id: 2,
     name: "project1",
     image: Img,
+    link: '',
   },
   {
     id: 3,
     name: "project2",
     image: Img,
+    link: '',
   },
   {
     id: 4,
     name: "project3",
     image: Img,
+    link: '',
   },
   {
     id: 2,
     name: "project4",
     image: Img,
+    link: '',
   },
   {
     id: 2,
     name: "project5",
     image: Img,
+    link: '',
   },
 
   {
     id: 2,
     name: "project6",
     image: Img,
+    link: '',
   },
   {
     id: 2,
     name: "project7",
     image: Img,
+    link: '',
   },
 ];
 

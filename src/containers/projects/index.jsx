@@ -70,9 +70,14 @@ const filterData = [
 
 const Projects = () => {
   const [filteredVal, setFilteredVal] = useState(1);
+  const [hoverVal, setHoveredVal] = useState(null);
 
   function handleFilter(currentId) {
     setFilteredVal(currentId);
+  }
+
+  function handleHover(index) {
+    setFilteredVal(index);
   }
 
   const filteredItems = filteredVal === 1 ? 
@@ -95,7 +100,7 @@ const Projects = () => {
               className="projects__content__cards__item"
               key={`cardItem-${item.name.trim()}`}
               onMouseEnter= {()=>handleHover(index)}
-              onMouseLeave= {()=>handleHover(index)}
+              onMouseLeave= {()=>handleHover(null)}
             >
               <div className="projects__content__cards__item__img-wrapper">
                 <a>
@@ -103,7 +108,14 @@ const Projects = () => {
                 </a>
               </div>
               <div className="overlay">
-
+                {
+                  index === hoverVal && (
+                    <div>
+                      <p>{item.name}</p>
+                      <button>Visit</button>
+                    </div>
+                  )
+                }
             </div>
           ))}
         </div>

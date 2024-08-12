@@ -81,6 +81,11 @@
 
                         p {
                             color: var(--yellow-theme-sub-text-color);
+                            margin: 0px;
+                            font-size: 4rem;
+                            position: relative;
+                            overflow: hidden;
+                            white-space: nowrap;
                         }
                     }
                 }

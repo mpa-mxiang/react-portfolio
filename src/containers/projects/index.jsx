@@ -3,6 +3,7 @@ import PageHeader from "../../components/pageHeader";
 import { BsInfoCircleFill } from "react-icons/bs";
 import Img from "../../images/spcial-work.png";
 import "./styles.scss";
+
 const projectData = [
   {
     id: 2,
@@ -34,7 +35,6 @@ const projectData = [
     image: Img,
     link: '',
   },
-
   {
     id: 2,
     name: "project6",
@@ -77,11 +77,11 @@ const Projects = () => {
   }
 
   function handleHover(index) {
-    setFilteredVal(index);
+    setHoveredVal(index);
   }
 
   const filteredItems = filteredVal === 1 ? 
-  projectData : projectData.filter(item=>item.id === filteredVal);
+    projectData : projectData.filter(item => item.id === filteredVal);
 
   return (
     <section id="projects" className="projects">
@@ -95,27 +95,24 @@ const Projects = () => {
           ))}
         </ul>
         <div className="projects__content__cards">
-          {filteredItems.map((item) => (
+          {filteredItems.map((item, index) => (
             <div
               className="projects__content__cards__item"
               key={`cardItem-${item.name.trim()}`}
-              onMouseEnter= {()=>handleHover(index)}
-              onMouseLeave= {()=>handleHover(null)}
+              onMouseEnter={() => handleHover(index)}
+              onMouseLeave={() => handleHover(null)}
             >
               <div className="projects__content__cards__item__img-wrapper">
-                <a>
-                  <img alt="dummy project" src={item.image} />
+                <a href={item.link || "#!"}>
+                  <img alt={`Image of ${item.name}`} src={item.image} />
                 </a>
               </div>
-              <div className="overlay">
-                {
-                  index === hoverVal && (
-                    <div>
-                      <p>{item.name}</p>
-                      <button>Visit</button>
-                    </div>
-                  )
-                }
+              {index === hoverVal && (
+                <div className="overlay">
+                  <p>{item.name}</p>
+                  <button>Visit</button>
+                </div>
+              )}
             </div>
           ))}
         </div>

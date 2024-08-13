@@ -109,8 +109,10 @@ const Projects = () => {
               </div>
               {index === hoverVal && (
                 <div className="overlay">
-                  <p>{item.name}</p>
-                  <button>Visit</button>
+                  <div>
+                    <p>{item.name}</p>
+                    <button>Visit</button>
+                  </div>
                 </div>
               )}
             </div>

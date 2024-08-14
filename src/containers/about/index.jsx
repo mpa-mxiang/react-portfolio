@@ -6,13 +6,7 @@ import "./styles.scss";
 import { DiGit, DiGithub } from "react-icons/di";
 import { FaDev, FaDatabase } from "react-icons/fa";
 
-const personDetails = [
-  { label: "Name", value: "Jiachun Xiang" },
-  { label: "Location", value: "Canada" },
-  { label: "Email", value: "jcxiang1230@gmail.com" },
-];
-
-const jobSummary = `
+const summary = `
 I am a passionate and dedicated developer with a Bachelor's degree in Computer Science. 
 My expertise spans both front-end and back-end development. I am proficient 
 in HTML, CSS, and ReactJS on the front-end, creating intuitive and responsive user interfaces. 
@@ -36,8 +30,8 @@ const About = () => {
             end={{ transform: "translateX(0px)" }}
           >
             <div>
-              <h3>Developer</h3>
-              <p>{jobSummary}</p>
+              <h3>Get to know me!</h3>
+              <p>{summary}</p>
             </div>
           </Animate>
           <Animate
@@ -47,15 +41,7 @@ const About = () => {
             start={{ transform: "translateX(-900px)" }}
             end={{ transform: "translateX(0px)" }}
           >
-            <h3 className="personalInfoText">Personal Info</h3>
-            <ul>
-              {personDetails.map((item, i) => (
-                <li key={i}>
-                  <span className="title">{item.label}</span>
-                  <span className="value">{item.value}</span>
-                </li>
-              ))}
-            </ul>
+            <h3 className="personalInfoText">My Skills</h3>
           </Animate>
         </div>
         <Animate

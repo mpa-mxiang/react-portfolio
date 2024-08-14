@@ -6,10 +6,8 @@ import { FaLinkedinIn } from "react-icons/fa6";
 import { FaGithub } from "react-icons/fa";
 const Home = () => {
 
-  const navigate = useNavigate();
-
   const handleNav = () => {
-    navigate("/contact");
+    window.location.href = "mailto:jcxiang@gmail.com";
   }
   return (
     <section id="Home" className="home">

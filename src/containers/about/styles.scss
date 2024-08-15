@@ -94,7 +94,50 @@
     }
 }
 
-@media only screen and (max-width: 768px) {
+@media only screen and (max-width: 425px) {
+    .about__content {
+        flex-direction: column;
+
+        &__personalWrapper, &___infoWrapper {
+            width: 100%;
+        }
+
+        &__infoWrapper {
+            margin: 10px 0px;
+            &__content {
+                width: 222px;
+                height: 222px;
+                background: radial-gradient(120px, var(--yellow-theme-main-color), transparent 120%);
+
+                div:nth-child(1) {
+                    position: absolute;
+                    top: -14%;
+                    left: 38%
+                }
+
+                div:nth-child(2) {
+                    position: absolute;
+                    top: 40%;
+                    right: -15%;
+                }
+
+                div:nth-child(3) {
+                    position: absolute;
+                    bottom: -18%;
+                    left: 37%;
+                }
+
+                div:nth-child(4) {
+                    position: absolute;
+                    left: -13%;
+                    top: 40%;
+                }
+            }
+        }
+    }
+}
+
+@media only screen and (min-width: 425px) and (max-width: 768px) {
     .about__content {
         flex-direction: column;
 

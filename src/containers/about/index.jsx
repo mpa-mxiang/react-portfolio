@@ -41,7 +41,20 @@ const About = () => {
             start={{ transform: "translateX(-900px)" }}
             end={{ transform: "translateX(0px)" }}
           >
-            <h3 className="personalInfoText">My Skills</h3>
+            <h3 className="skillText">My Skills</h3>
+            <ul className="skillList">
+              <li className="skillItem">HTML</li>
+              <li className="skillItem">CSS/SCSS</li>
+              <li className="skillItem">ReactJS/Redux</li>
+              <li className="skillItem">GitHub/Git</li>
+              <li className="skillItem">Jest</li>
+              <li className="skillItem">Python</li>
+              <li className="skillItem">Django</li>
+              <li className="skillItem">Firebase</li>
+              <li className="skillItem">Ruby</li>
+              <li className="skillItem">Ruby on Rails</li>
+              <li className="skillItem">PostgreSQL</li>
+            </ul>
           </Animate>
         </div>
         <Animate

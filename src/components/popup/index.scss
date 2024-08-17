@@ -14,12 +14,15 @@
       padding: 32px;
       width: 100%;
       max-width: 640px;
-      background-color: #fff;
+      background-color: var(--yellow-theme-background-color);
   
       .close-btn {
         position: absolute;
         top: 16px;
         right: 16px;
+        color: var(--yellow-theme-main-color);
+        background-color: var(--yellow-theme-background-color);
+        border: none;
       }
     }
   }

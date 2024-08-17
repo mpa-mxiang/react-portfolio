@@ -101,6 +101,24 @@
             }
         }
     }
+
+    &__popup {
+        display: flex;
+        flex-direction: row;
+        
+        p {
+            margin: 1rem;
+        }
+
+        &__texts {
+            display: flex;
+            flex-direction: column;
+
+            ul {
+                list-style: none;
+            }
+        }
+    }
 }
 
 @media only screen and (max-width: 480px) {

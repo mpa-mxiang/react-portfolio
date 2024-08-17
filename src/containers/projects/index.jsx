@@ -140,7 +140,17 @@ const Projects = () => {
         {activeProject && (
           <div>
             <h3>{activeProject.name}</h3>
-            <p>This is more information about {activeProject.name}.</p>
+            <div className="projects__popup">
+              <img alt={`Image of ${activeProject.name}`} src={activeProject.image} />
+              <div className="projects__popup__texts">
+                <p>This is more information about {activeProject.name}.</p>
+                <ul>
+                  <li>React</li>
+                  <li>CSS</li>
+                </ul>
+              </div>
+
+            </div>
           </div>
         )}
       </Popup>

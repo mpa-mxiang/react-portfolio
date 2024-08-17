@@ -4,6 +4,8 @@ import { BsInfoCircleFill } from "react-icons/bs";
 import Img from "../../images/spcial-work.png";
 import "./styles.scss";
 import Popup from "../../components/popup/index";
+import { HiExternalLink } from "react-icons/hi";
+import { TbBrandGithubFilled } from "react-icons/tb";
 
 const projectData = [
   {
@@ -141,15 +143,34 @@ const Projects = () => {
           <div>
             <h3>{activeProject.name}</h3>
             <div className="projects__popup">
-              <img alt={`Image of ${activeProject.name}`} src={activeProject.image} />
+              <img
+                alt={`Image of ${activeProject.name}`}
+                src={activeProject.image}
+              />
               <div className="projects__popup__texts">
                 <p>This is more information about {activeProject.name}.</p>
                 <ul>
                   <li>React</li>
                   <li>CSS</li>
                 </ul>
-              </div>
+                <button>
+                  See Live
+                  <HiExternalLink
+                    size={30}
+                    color="var(--yellow-theme-sub-text-color)"
+                    className="projects__popup__icons"
+                  />
+                </button>
 
+                <button>
+                  See Source
+                  <TbBrandGithubFilled
+                    size={30}
+                    color="var(--yellow-theme-sub-text-color)"
+                    className="projects__popup__icons"
+                  />
+                </button>
+              </div>
             </div>
           </div>
         )}

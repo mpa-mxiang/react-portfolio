@@ -104,12 +104,14 @@
 
   h3 {
     color: var(--yellow-theme-sub-text-color);
+    font-size: 3rem;
   }
 
   &__popup {
     display: flex;
     flex-direction: row;
     gap: 1rem;
+    margin-top: 1rem;
 
     p {
       color: var(--yellow-theme-sub-text-color);
@@ -167,6 +169,10 @@
 
   .projects__content__cards {
     grid-template-columns: repeat(1, 1fr);
+  }
+
+  .projects__popup {
+    flex-direction: column;
   }
 }
 

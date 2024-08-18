@@ -12,7 +12,7 @@ const Home = () => {
     <section id="Home" className="home">
       <div className="home__text-wrapper">
         <h1>
-          Hello, I'm Jiachun
+          Hello I am Jiachun
           <br />
           Developer
         </h1>
@@ -25,13 +25,13 @@ const Home = () => {
         end={{ transform: 'translateY(0px)' }}
       >
         <div className="home__contact-me">
-          <button onClick={handleNav}>Hire me</button>
+          <button onClick={handleNav} type="button">Hire me</button>
         </div>
         <div className="home__icons">
-          <a href="https://www.linkedin.com/in/jiachunlilyxiang/" target="_blank" rel="noopener noreferrer">
+          <a href="https://www.linkedin.com/in/jiachunlilyxiang/" target="_blank" rel="noopener noreferrer" aria-label="linkedin">
             <FaLinkedinIn size={30} color="var(--yellow-theme-main-color)" />
           </a>
-          <a href="https://github.com/mpa-mxiang" target="_blank" rel="noopener noreferrer">
+          <a href="https://github.com/mpa-mxiang" target="_blank" rel="noopener noreferrer" aria-label="github">
             <FaGithub size={30} color="var(--yellow-theme-main-color)" />
           </a>
         </div>

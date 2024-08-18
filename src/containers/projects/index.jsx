@@ -1,11 +1,11 @@
 import React, { useState } from 'react';
 import { BsInfoCircleFill } from 'react-icons/bs';
+import { HiExternalLink } from 'react-icons/hi';
+import { TbBrandGithubFilled } from 'react-icons/tb';
 import PageHeader from '../../components/pageHeader';
 import Img from '../../images/spcial-work.png';
 import './styles.scss';
 import Popup from '../../components/popup/index';
-import { HiExternalLink } from 'react-icons/hi';
-import { TbBrandGithubFilled } from 'react-icons/tb';
 
 const projectData = [
   {
@@ -99,6 +99,11 @@ const Projects = () => {
               className={item.filterId === filteredVal ? 'active' : ''}
               onClick={() => handleFilter(item.filterId)}
               key={item.filterId}
+              onKeyPress={(e) => {
+                if (e.key === 'Enter' || e.key === ' ') {
+                  handleFilter(item.filterId);
+                }
+              }}
             >
               {item.label}
             </li>
@@ -114,7 +119,7 @@ const Projects = () => {
             >
               <div className="projects__content__cards__item__img-wrapper">
                 <a href={item.link || '#!'}>
-                  <img alt={`Image of ${item.name}`} src={item.image} />
+                  <img alt={activeProject.name} src={activeProject.image} />
                 </a>
               </div>
               {index === hoverVal && (
@@ -126,6 +131,7 @@ const Projects = () => {
                         setActiveProject(item);
                         setBtnPopup(true);
                       }}
+                      type="button"
                     >
                       Visit
                     </button>
@@ -142,10 +148,8 @@ const Projects = () => {
           <div>
             <h3>{activeProject.name}</h3>
             <div className="projects__popup">
-              <img
-                alt={`Image of ${activeProject.name}`}
-                src={activeProject.image}
-              />
+              <img alt={activeProject.name} src={activeProject.image} />
+
               <div className="projects__popup__texts">
                 <p>
                   This is more information about
@@ -156,7 +160,7 @@ const Projects = () => {
                   <li>React</li>
                   <li>CSS</li>
                 </ul>
-                <button>
+                <button type="button">
                   See Live
                   <HiExternalLink
                     size={30}
@@ -165,7 +169,7 @@ const Projects = () => {
                   />
                 </button>
 
-                <button>
+                <button type="button">
                   See Source
                   <TbBrandGithubFilled
                     size={30}

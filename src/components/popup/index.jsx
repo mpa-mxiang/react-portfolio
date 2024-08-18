@@ -1,5 +1,5 @@
-import React from "react";
-import "./styles.scss";
+import React from 'react';
+import './styles.scss';
 
 function Popup(props) {
   return props.trigger ? (
@@ -12,7 +12,7 @@ function Popup(props) {
       </div>
     </div>
   ) : (
-    ""
+    ''
   );
 }
 

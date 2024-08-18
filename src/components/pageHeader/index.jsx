@@ -1,18 +1,18 @@
 import React from 'react';
 import './styles.scss';
 
-const PageHeader = (props)=> {
-const {headerText, icon } = props;
+const PageHeader = (props) => {
+  const { headerText, icon } = props;
   return (
-    <div className='wrapper'>
+    <div className="wrapper">
       <h2>
         {headerText}
       </h2>
-    <span>
+      <span>
         {icon}
-    </span>
+      </span>
     </div>
-  )
-}
+  );
+};
 
-export default PageHeader
+export default PageHeader;

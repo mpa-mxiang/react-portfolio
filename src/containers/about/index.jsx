@@ -1,10 +1,10 @@
-import React from "react";
-import PageHeader from "../../components/pageHeader";
-import { BsInfoCircleFill } from "react-icons/bs";
-import { Animate } from "react-simple-animate";
-import "./styles.scss";
-import { DiGit, DiGithub } from "react-icons/di";
-import { FaDev, FaDatabase } from "react-icons/fa";
+import React from 'react';
+import PageHeader from '../../components/pageHeader';
+import { BsInfoCircleFill } from 'react-icons/bs';
+import { Animate } from 'react-simple-animate';
+import './styles.scss';
+import { DiGit, DiGithub } from 'react-icons/di';
+import { FaDev, FaDatabase } from 'react-icons/fa';
 
 const summary = `
 I am a passionate and dedicated developer with a Bachelor's degree in Computer Science. 
@@ -16,74 +16,72 @@ to stay at the forefront of technological advancements. I aim to leverage my div
 build innovative and impactful software solutions.
 `;
 
-const About = () => {
-  return (
-    <section id="about" className="about">
-      <PageHeader headerText="About Me" icon={<BsInfoCircleFill size={40} />} />
-      <div className="about__content">
-        <div className="about__content__personalWrapper">
-          <Animate
-            play
-            duration={1.5}
-            delay={1}
-            start={{ transform: "translateX(-900px)" }}
-            end={{ transform: "translateX(0px)" }}
-          >
-            <div>
-              <h3>Get to know me!</h3>
-              <p>{summary}</p>
-            </div>
-          </Animate>
-          <Animate
-            play
-            duration={1.5}
-            delay={1}
-            start={{ transform: "translateX(-900px)" }}
-            end={{ transform: "translateX(0px)" }}
-          >
-            <h3 className="skillText">My Skills</h3>
-            <ul className="skillList">
-              <li className="skillItem">HTML</li>
-              <li className="skillItem">CSS/SCSS</li>
-              <li className="skillItem">ReactJS/Redux</li>
-              <li className="skillItem">GitHub/Git</li>
-              <li className="skillItem">Jest</li>
-              <li className="skillItem">Python</li>
-              <li className="skillItem">Django</li>
-              <li className="skillItem">Firebase</li>
-              <li className="skillItem">Ruby</li>
-              <li className="skillItem">Ruby on Rails</li>
-              <li className="skillItem">PostgreSQL</li>
-            </ul>
-          </Animate>
-        </div>
+const About = () => (
+  <section id="about" className="about">
+    <PageHeader headerText="About Me" icon={<BsInfoCircleFill size={40} />} />
+    <div className="about__content">
+      <div className="about__content__personalWrapper">
         <Animate
           play
           duration={1.5}
           delay={1}
-          start={{ transform: "translateX(600px)" }}
-          end={{ transform: "translateX(0px)" }}
+          start={{ transform: 'translateX(-900px)' }}
+          end={{ transform: 'translateX(0px)' }}
         >
-          <div className="about__content__infoWrapper">
-            <div className="about__content__infoWrapper__content">
-              <div>
-                <FaDev size={60} color="var(--yellow-theme-main-color)" />
-              </div>
-              <div>
-                <DiGit size={80} color="var(--yellow-theme-main-color)" />
-              </div>
-              <div>
-                <DiGithub size={80} color="var(--yellow-theme-main-color)" />
-              </div>
-              <div>
-                <FaDatabase size={60} color="var(--yellow-theme-main-color)" />
-              </div>
-            </div>
+          <div>
+            <h3>Get to know me!</h3>
+            <p>{summary}</p>
           </div>
         </Animate>
+        <Animate
+          play
+          duration={1.5}
+          delay={1}
+          start={{ transform: 'translateX(-900px)' }}
+          end={{ transform: 'translateX(0px)' }}
+        >
+          <h3 className="skillText">My Skills</h3>
+          <ul className="skillList">
+            <li className="skillItem">HTML</li>
+            <li className="skillItem">CSS/SCSS</li>
+            <li className="skillItem">ReactJS/Redux</li>
+            <li className="skillItem">GitHub/Git</li>
+            <li className="skillItem">Jest</li>
+            <li className="skillItem">Python</li>
+            <li className="skillItem">Django</li>
+            <li className="skillItem">Firebase</li>
+            <li className="skillItem">Ruby</li>
+            <li className="skillItem">Ruby on Rails</li>
+            <li className="skillItem">PostgreSQL</li>
+          </ul>
+        </Animate>
       </div>
-    </section>
-  );
-};
+      <Animate
+        play
+        duration={1.5}
+        delay={1}
+        start={{ transform: 'translateX(600px)' }}
+        end={{ transform: 'translateX(0px)' }}
+      >
+        <div className="about__content__infoWrapper">
+          <div className="about__content__infoWrapper__content">
+            <div>
+              <FaDev size={60} color="var(--yellow-theme-main-color)" />
+            </div>
+            <div>
+              <DiGit size={80} color="var(--yellow-theme-main-color)" />
+            </div>
+            <div>
+              <DiGithub size={80} color="var(--yellow-theme-main-color)" />
+            </div>
+            <div>
+              <FaDatabase size={60} color="var(--yellow-theme-main-color)" />
+            </div>
+          </div>
+        </div>
+      </Animate>
+    </div>
+  </section>
+);
 
 export default About;

@@ -1,21 +1,21 @@
-import React, { useState } from "react";
-import { FaReact, FaBars } from "react-icons/fa";
-import { Link } from "react-router-dom";
-import { HiX } from "react-icons/hi";
+import React, { useState } from 'react';
+import { FaReact, FaBars } from 'react-icons/fa';
+import { Link } from 'react-router-dom';
+import { HiX } from 'react-icons/hi';
 import './styles.scss';
 
 const data = [
   {
-    label: "HOME",
-    to: "/",
+    label: 'HOME',
+    to: '/',
   },
   {
-    label: "ABOUT",
-    to: "/about",
+    label: 'ABOUT',
+    to: '/about',
   },
   {
-    label: "PROJECTS",
-    to: "/projects",
+    label: 'PROJECTS',
+    to: '/projects',
   },
 ];
 
@@ -30,11 +30,11 @@ const Navbar = () => {
     <div>
       <nav className="navbar">
         <div className="navbar__container">
-          <Link to={"/"} className="navbar__container__logo">
+          <Link to="/" className="navbar__container__logo">
             <FaReact size={30} />
           </Link>
         </div>
-        <ul className={`navbar__container__menu ${toggleIcon ? "active" : ""}`}>
+        <ul className={`navbar__container__menu ${toggleIcon ? 'active' : ''}`}>
           {data.map((item, index) => (
             <li key={index} className="navbar__container__menu__item">
               <Link

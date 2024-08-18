@@ -1,73 +1,73 @@
-import React, { useState } from "react";
-import PageHeader from "../../components/pageHeader";
-import { BsInfoCircleFill } from "react-icons/bs";
-import Img from "../../images/spcial-work.png";
-import "./styles.scss";
-import Popup from "../../components/popup/index";
-import { HiExternalLink } from "react-icons/hi";
-import { TbBrandGithubFilled } from "react-icons/tb";
+import React, { useState } from 'react';
+import { BsInfoCircleFill } from 'react-icons/bs';
+import PageHeader from '../../components/pageHeader';
+import Img from '../../images/spcial-work.png';
+import './styles.scss';
+import Popup from '../../components/popup/index';
+import { HiExternalLink } from 'react-icons/hi';
+import { TbBrandGithubFilled } from 'react-icons/tb';
 
 const projectData = [
   {
     id: 2,
-    name: "project1",
+    name: 'project1',
     image: Img,
-    link: "",
+    link: '',
   },
   {
     id: 3,
-    name: "project2",
+    name: 'project2',
     image: Img,
-    link: "",
+    link: '',
   },
   {
     id: 4,
-    name: "project3",
+    name: 'project3',
     image: Img,
-    link: "",
+    link: '',
   },
   {
     id: 2,
-    name: "project4",
+    name: 'project4',
     image: Img,
-    link: "",
+    link: '',
   },
   {
     id: 2,
-    name: "project5",
+    name: 'project5',
     image: Img,
-    link: "",
+    link: '',
   },
   {
     id: 2,
-    name: "project6",
+    name: 'project6',
     image: Img,
-    link: "",
+    link: '',
   },
   {
     id: 2,
-    name: "project7",
+    name: 'project7',
     image: Img,
-    link: "",
+    link: '',
   },
 ];
 
 const filterData = [
   {
     filterId: 1,
-    label: "All",
+    label: 'All',
   },
   {
     filterId: 2,
-    label: "Front End",
+    label: 'Front End',
   },
   {
     filterId: 3,
-    label: "Back End",
+    label: 'Back End',
   },
   {
     filterId: 4,
-    label: "Full Stack",
+    label: 'Full Stack',
   },
 ];
 
@@ -85,10 +85,9 @@ const Projects = () => {
     setHoveredVal(index);
   }
 
-  const filteredItems =
-    filteredVal === 1
-      ? projectData
-      : projectData.filter((item) => item.id === filteredVal);
+  const filteredItems = filteredVal === 1
+    ? projectData
+    : projectData.filter((item) => item.id === filteredVal);
 
   return (
     <section id="projects" className="projects">
@@ -97,7 +96,7 @@ const Projects = () => {
         <ul className="projects__content__filter">
           {filterData.map((item) => (
             <li
-              className={item.filterId === filteredVal ? "active" : ""}
+              className={item.filterId === filteredVal ? 'active' : ''}
               onClick={() => handleFilter(item.filterId)}
               key={item.filterId}
             >
@@ -114,7 +113,7 @@ const Projects = () => {
               onMouseLeave={() => handleHover(null)}
             >
               <div className="projects__content__cards__item__img-wrapper">
-                <a href={item.link || "#!"}>
+                <a href={item.link || '#!'}>
                   <img alt={`Image of ${item.name}`} src={item.image} />
                 </a>
               </div>
@@ -148,7 +147,11 @@ const Projects = () => {
                 src={activeProject.image}
               />
               <div className="projects__popup__texts">
-                <p>This is more information about {activeProject.name}.</p>
+                <p>
+                  This is more information about
+                  {activeProject.name}
+                  .
+                </p>
                 <ul>
                   <li>React</li>
                   <li>CSS</li>

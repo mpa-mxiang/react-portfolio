@@ -99,11 +99,7 @@ const Projects = () => {
               className={item.filterId === filteredVal ? 'active' : ''}
               onClick={() => handleFilter(item.filterId)}
               key={item.filterId}
-              onKeyPress={(e) => {
-                if (e.key === 'Enter' || e.key === ' ') {
-                  handleFilter(item.filterId);
-                }
-              }}
+              role="none"
             >
               {item.label}
             </li>
@@ -119,7 +115,7 @@ const Projects = () => {
             >
               <div className="projects__content__cards__item__img-wrapper">
                 <a href={item.link || '#!'}>
-                  <img alt={activeProject.name} src={activeProject.image} />
+                  <img alt={item.name} src={item.image} />
                 </a>
               </div>
               {index === hoverVal && (
@@ -144,12 +140,14 @@ const Projects = () => {
       </div>
 
       <Popup trigger={btnPopup} setTrigger={setBtnPopup}>
-        {activeProject && (
+        {activeProject ? (
           <div>
             <h3>{activeProject.name}</h3>
             <div className="projects__popup">
-              <img alt={activeProject.name} src={activeProject.image} />
-
+              <img
+                alt={activeProject.name}
+                src={activeProject.image}
+              />
               <div className="projects__popup__texts">
                 <p>
                   This is more information about
@@ -166,6 +164,7 @@ const Projects = () => {
                     size={30}
                     color="var(--yellow-theme-sub-text-color)"
                     className="projects__popup__icons"
+                    type="button"
                   />
                 </button>
 
@@ -175,12 +174,13 @@ const Projects = () => {
                     size={30}
                     color="var(--yellow-theme-sub-text-color)"
                     className="projects__popup__icons"
+                    type="button"
                   />
                 </button>
               </div>
             </div>
           </div>
-        )}
+        ) : null}
       </Popup>
     </section>
   );

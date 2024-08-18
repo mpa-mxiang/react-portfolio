@@ -35,8 +35,8 @@ const Navbar = () => {
           </Link>
         </div>
         <ul className={`navbar__container__menu ${toggleIcon ? 'active' : ''}`}>
-          {data.map((item, index) => (
-            <li key={index} className="navbar__container__menu__item">
+          {data.map((item) => (
+            <li key={item.label} className="navbar__container__menu__item">
               <Link
                 className="navbar__container__menu__item__links"
                 to={item.to}
@@ -46,7 +46,17 @@ const Navbar = () => {
             </li>
           ))}
         </ul>
-        <div className="nav-icon" onClick={handleIcon}>
+        <div
+          className="nav-icon"
+          onClick={handleIcon}
+          tabIndex={0}
+          role="button"
+          onKeyPress={(e) => {
+            if (e.key === 'Enter' || e.key === ' ') {
+              handleIcon();
+            }
+          }}
+        >
           {toggleIcon ? <HiX size={30} /> : <FaBars size={30} />}
         </div>
       </nav>

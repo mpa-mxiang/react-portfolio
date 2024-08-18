@@ -1,4 +1,5 @@
 import React from 'react';
+import PropTypes from 'prop-types';
 import './styles.scss';
 
 const PageHeader = (props) => {
@@ -13,6 +14,12 @@ const PageHeader = (props) => {
       </span>
     </div>
   );
+};
+
+// Define the prop types
+PageHeader.propTypes = {
+  headerText: PropTypes.string.isRequired,
+  icon: PropTypes.element.isRequired,
 };
 
 export default PageHeader;

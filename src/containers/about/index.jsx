@@ -1,10 +1,10 @@
 import React from 'react';
-import PageHeader from '../../components/pageHeader';
 import { BsInfoCircleFill } from 'react-icons/bs';
 import { Animate } from 'react-simple-animate';
 import './styles.scss';
 import { DiGit, DiGithub } from 'react-icons/di';
 import { FaDev, FaDatabase } from 'react-icons/fa';
+import PageHeader from '../../components/pageHeader';
 
 const summary = `
 I am a passionate and dedicated developer with a Bachelor's degree in Computer Science. 

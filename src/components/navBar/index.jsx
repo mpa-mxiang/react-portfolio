@@ -30,7 +30,7 @@ const Navbar = () => {
     <div>
       <nav className="navbar">
         <div className="navbar__container">
-          <Link to="/" className="navbar__container__logo">
+          <Link to="/" className="navbar__container__logo" aria-label="navbar_logo">
             <FaReact size={30} />
           </Link>
         </div>

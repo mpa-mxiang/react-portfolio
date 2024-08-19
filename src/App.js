@@ -26,13 +26,13 @@ function App() {
 
       <Navbar />
 
-      <div className="App__main-content">
+      <main className="App__main-content">
         <Routes>
           <Route index path="/" element={<Home />} />
           <Route path="/about" element={<About />} />
           <Route path="/projects" element={<Projects />} />
         </Routes>
-      </div>
+      </main>
 
     </div>
   );

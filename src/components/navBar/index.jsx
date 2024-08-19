@@ -50,6 +50,7 @@ const Navbar = () => {
           className="nav-icon"
           onClick={handleIcon}
           tabIndex={0}
+          aria-label={toggleIcon ? 'Close navigation menu' : 'Open navigation menu'}
           role="button"
           onKeyPress={(e) => {
             if (e.key === 'Enter' || e.key === ' ') {

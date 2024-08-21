@@ -13,49 +13,49 @@ const projectData = [
     name: 'project1',
     image: Img,
     link: '',
-    stacks: '<li>HTML</li><li>CSS</li><li>JavaScript</li>',
+    stacks: ['HTML', 'CSS', 'JavaScript'],
   },
   {
     id: 3,
     name: 'project2',
     image: Img,
     link: '',
-    stacks: '<li>HTML</li><li>CSS</li><li>JavaScript</li>',
+    stacks: ['HTML', 'CSS', 'JavaScript'],
   },
   {
     id: 4,
     name: 'project3',
     image: Img,
     link: '',
-    stacks: '<li>HTML</li><li>CSS</li><li>JavaScript</li>',
+    stacks: ['HTML', 'CSS', 'JavaScript'],
   },
   {
     id: 2,
     name: 'project4',
     image: Img,
     link: '',
-    stacks: '<li>HTML</li><li>CSS</li><li>JavaScript</li>',
+    stacks: ['HTML', 'CSS', 'JavaScript'],
   },
   {
     id: 2,
     name: 'project5',
     image: Img,
     link: '',
-    stacks: '<li>HTML</li><li>CSS</li><li>JavaScript</li>',
+    stacks: ['HTML', 'CSS', 'JavaScript'],
   },
   {
     id: 2,
     name: 'project6',
     image: Img,
     link: '',
-    stacks: '<li>HTML</li><li>CSS</li><li>JavaScript</li>',
+    stacks: ['HTML', 'CSS', 'JavaScript'],
   },
   {
     id: 2,
     name: 'project7',
     image: Img,
     link: '',
-    stacks: '<li>HTML</li><li>CSS</li><li>JavaScript</li>',
+    stacks: ['HTML', 'CSS', 'JavaScript'],
   },
 ];
 
@@ -154,11 +154,17 @@ const Projects = () => {
               <img alt={activeProject.name} src={activeProject.image} />
               <div className="projects__popup__texts">
                 <p>
-                  This is more information about
+                  This is more information about&nbsp;
                   {activeProject.name}
                   .
                 </p>
-                <ul>{activeProject.stacks}</ul>
+
+                <ul>
+                  {activeProject.stacks.map((stack) => (
+                    <li key={stack}>{stack}</li>
+                  ))}
+                </ul>
+
                 <button type="button">
                   See Live
                   <HiExternalLink

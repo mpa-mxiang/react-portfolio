@@ -90,73 +90,73 @@
             }
           }
         }
+      }
 
-        .overlay {
+      .overlay {
+        position: absolute;
+        top: 0;
+        bottom: 0;
+        right: 0;
+        left: 0;
+        height: 100%;
+        width: 100%;
+        opacity: 0;
+        transition: 0.5s ease;
+        background-color: var(--yellow-theme-main-color);
+
+        div {
           position: absolute;
-          top: 0;
-          bottom: 0;
-          right: 0;
-          left: 0;
-          height: 100%;
-          width: 100%;
-          opacity: 0;
-          transition: 0.5s ease;
-          background-color: var(--yellow-theme-main-color);
+          top: 50%;
+          left: 50%;
+          transform: translate(-50%, -50%);
+          text-align: center;
 
-          div {
-            position: absolute;
-            top: 50%;
-            left: 50%;
-            transform: translate(-50%, -50%);
-            text-align: center;
+          p {
+            color: #000;
+            margin: 0;
+            font-size: 4rem;
+            position: relative;
+            overflow: hidden;
+            white-space: nowrap;
+            animation: typingEffect 1s steps(30, end);
+          }
 
-            p {
-              color: #000;
-              margin: 0;
-              font-size: 4rem;
-              position: relative;
-              overflow: hidden;
-              white-space: nowrap;
-              animation: typingEffect 1s steps(30, end);
-            }
-
-            button {
-              cursor: pointer;
-              margin-top: 16px;
-              padding: 10px 70px;
-              font-size: 2rem;
-              background: transparent;
-              color: #000;
-              border: 1.5px solid #000;
-              border-radius: 4px;
-              font-weight: 500;
-            }
+          button {
+            cursor: pointer;
+            margin-top: 16px;
+            padding: 10px 70px;
+            font-size: 2rem;
+            background: transparent;
+            color: #000;
+            border: 1.5px solid #000;
+            border-radius: 4px;
+            font-weight: 500;
           }
         }
+      }
 
-        &:hover .overlay {
-          opacity: 1;
-        }
+      &:hover .overlay {
+        opacity: 1;
+      }
 
-        a img {
+      a img {
+        object-fit: cover;
+        width: 100%;
+
+        &__img-wrapper {
           object-fit: cover;
           width: 100%;
-
-          &__img-wrapper {
-            object-fit: cover;
-            width: 100%;
-            padding: 10px;
-            box-sizing: border-box;
-          }
+          padding: 10px;
+          box-sizing: border-box;
         }
       }
     }
   }
+}
 
-  h3 {
-    color: var(--yellow-theme-sub-text-color);
-    font-size: 3rem;
-  }
+h3 {
+  color: var(--yellow-theme-sub-text-color);
+  font-size: 3rem;
 }
 
 @media only screen and (max-width: 480px) {

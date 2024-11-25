@@ -247,6 +247,11 @@ h3 {
       color: var(--yellow-theme-sub-text-color);
     }
 
+    ul {
+      list-style-type: none;
+      display: flex;
+    }
+
     ul > li,
     button {
       font-size: 2.4rem;

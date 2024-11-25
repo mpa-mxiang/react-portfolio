@@ -46,9 +46,12 @@
           gap: 1rem;
           margin-top: 1rem;
 
-          p {
+          p, ul li {
             color: var(--yellow-theme-sub-text-color);
-            font-size: 1.5rem;
+          }
+
+          ul li {
+            list-style-type: none;
           }
 
           &__texts {
@@ -112,7 +115,6 @@
           text-align: center;
 
           p {
-            color: #000;
             margin: 0;
             font-size: 4rem;
             position: relative;
@@ -159,7 +161,7 @@ h3 {
   font-size: 3rem;
 }
 
-@media only screen and (max-width: 480px) {
+@media only screen and (max-width: 425px) {
   .projects__content__filter > li {
     font-size: 9px;
     padding: 9px 9px;
@@ -171,10 +173,43 @@ h3 {
 
   .projects__popup {
     flex-direction: column;
+
+    img {
+      width: 100%;
+    }
+
+    p, ul li {
+      color: var(--yellow-theme-sub-text-color);
+      font-size: 1.5rem;
+    }
+
+    ul {
+      display: flex;
+      flex-direction: row;
+      list-style-type: none;
+      gap: 1rem;
+    }
   }
 }
 
-@media only screen and (min-width: 481px) and (max-width: 767px) {
+@media only screen and (min-width: 426px) and (max-width: 1024px) {
+  .projects__popup {
+    display: flex;
+    gap: 3rem;
+    img {
+      width: 60%;
+    }
+
+    p, ul li {
+      color: var(--yellow-theme-sub-text-color);
+      font-size: 1.5rem;
+    }
+
+    ul {
+      list-style-type: none;
+      display: flex;
+    }
+  }
   .projects__content__filter > li {
     font-size: 11px;
     padding: 9px 9px;
@@ -201,9 +236,15 @@ h3 {
   .projects__popup {
     margin-top: 4rem;
     gap: 2rem;
+    display: flex;
 
-    p {
+    img {
+      width: 50%;
+    }
+
+    p, ul li {
       font-size: 3rem;
+      color: var(--yellow-theme-sub-text-color);
     }
 
     ul > li,

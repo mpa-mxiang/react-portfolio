@@ -6,7 +6,7 @@ import { FaGithub } from 'react-icons/fa';
 
 const Home = () => {
   const handleNav = () => {
-    window.location.href = 'mailto:jcxiang@gmail.com';
+    window.location.href = 'mailto:jcxiang1230@gmail.com';
   };
   return (
     <section id="Home" className="home">
